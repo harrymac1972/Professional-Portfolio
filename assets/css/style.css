@@ -30,11 +30,6 @@ nav {
     color: var(--blackish);
 }
 
-/* container needed for the absolutely relative position to the image */
-#background-container, .img-set {
-    position: relative;
-}   
-
 .img-set {
     opacity:0.5;
 }
@@ -100,6 +95,11 @@ nav {
     padding: 0 1em 0 1em;
 }
 
+/* container needed for the absolutely relative position to the image */
+#background-container, .img-set {
+    position: relative;
+}   
+
 #my-name {
     margin: .25em .25em .25em 0em;
     padding: 0em .5em 0em 2em;
@@ -131,3 +131,26 @@ nav {
     right: 5em;
     padding: .125em;
 }
+
+
+#contact-me {
+    display: flex;
+    align-items: center;
+}
+
+#contact-me a {
+    max-width: 70vw;
+    color: var(--blackish);
+    font-weight: bold;
+    text-decoration-thickness: 3px;
+}
+
+#contact-info {
+    justify-content: space-around;
+}
+
+#contact-info li {
+    display: inline;
+    margin: 3.5em;
+
+} 

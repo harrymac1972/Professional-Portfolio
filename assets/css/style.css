@@ -132,9 +132,7 @@ nav {
     padding: .125em;
 }
 
-
 #contact-me {
-    display: flex;
     align-items: center;
 }
 
@@ -144,13 +142,9 @@ nav {
     font-weight: bold;
     text-decoration-thickness: 3px;
 }
-
-#contact-info {
-    justify-content: space-around;
-}
-
+ 
 #contact-info li {
     display: inline;
     margin: 3.5em;
+}
 
-} 

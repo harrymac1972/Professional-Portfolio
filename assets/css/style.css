@@ -22,24 +22,24 @@ nav {
     background-color: var(--blackish);
 }
 
-.badge, .proj-badge {
+.badge, .work-badge {
     background-color: var(--greenish);
 }
 
-.badge, .proj-badge, h1 {    
+.badge, .work-badge, h1 {    
     color: var(--blackish);
 }
 
 /* container needed for the absolutely relative position to the image */
-.img-container {
+#background-container, .img-set {
     position: relative;
 }   
 
-.content-block .img-container{
-    opacity: 0.5;
+.img-set {
+    opacity:0.5;
 }
 
-.img-container:hover {
+.img-set:hover {
     opacity: 1;
 }
 
@@ -66,15 +66,34 @@ nav {
     font-size:large;
 }
 
-.proj {
+.img-set {
+    margin: 3px;
+}
+
+.work {
     border: 4px solid var(--greenish);
 }
 
-.proj-1 {
+.work-1 {
     max-width: 70vw;
+    margin-bottom: -.75em;
 }
 
-.proj-badge {
+.work-sub {
+    min-width: 34.65vw;
+    max-width: 50%;
+    min-height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.row {
+    display: flex;
+    max-width: 70vw;
+    margin-bottom: .5em;
+}
+
+.work-badge {
     position: absolute;
     bottom: 1.5em;
     left: 0em;
@@ -97,7 +116,7 @@ nav {
 
 #nav-text a {
     color: var(--greenish);
-    margin-right:1em;
+    margin-right: 1em;
 }
 
 #background-image {
@@ -110,5 +129,5 @@ nav {
     position: absolute;
     bottom: 1.5em;
     right: 5em;
-    padding:.125em;
+    padding: .125em;
 }

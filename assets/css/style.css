@@ -60,7 +60,10 @@ nav {
     margin: .25em .25em .25em 0em;
     padding: 0em .5em 0em 2em;
     font-size:x-large;
+}
 
+#avatar-img {
+    max-height: 12.5vh;
 }
 
 #nav-text a {

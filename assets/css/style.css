@@ -33,6 +33,14 @@ nav {
 /* container needed for the absolutely relative position to the image */
 .img-container {
     position: relative;
+}   
+
+.content-block .img-container{
+    opacity: 0.5;
+}
+
+.img-container:hover {
+    opacity: 1;
 }
 
 /* note: don't use 'wrap' on sections that you want to keep in a row */
@@ -48,14 +56,14 @@ nav {
     line-height: .5em;
     text-align: right;
     margin-right: 1em;
+    border-right: 4px solid var(--blackish);
+    padding-right: 1em;
 }
 
 .content-block content {
     display: flex;
     flex-wrap: wrap;
     font-size:large;
-    border-left: 4px solid var(--blackish);
-    padding-left: 2em;
 }
 
 .proj {
@@ -70,8 +78,7 @@ nav {
     position: absolute;
     bottom: 1.5em;
     left: 0em;
-    padding: 0 1em 0 1em;    
-    margin-left: 2em;
+    padding: 0 1em 0 1em;
 }
 
 #my-name {

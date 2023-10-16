@@ -22,16 +22,18 @@ nav {
     background-color: var(--blackish);
 }
 
-
-
-.badge {
+.badge, .proj-badge {
     background-color: var(--greenish);
 }
 
-.badge, h1 {    
+.badge, .proj-badge, h1 {    
     color: var(--blackish);
 }
 
+/* container needed for the absolutely relative position to the image */
+.img-container {
+    position: relative;
+}
 
 /* note: don't use 'wrap' on sections that you want to keep in a row */
 .content-block {
@@ -42,18 +44,30 @@ nav {
 
 .content-block aside {
     font-size: xx-large;
-    width: 15%;
+    min-width: 15%;
     line-height: .5em;
     text-align: right;
     margin-right: 1em;
 }
 
-.content-block section {
+.content-block content {
     display: flex;
     flex-wrap: wrap;
     font-size:large;
     border-left: 4px solid var(--blackish);
     padding-left: 2em;
+}
+
+.proj-1 {
+    max-width: 70vw;
+}
+
+.proj-badge {
+    position: absolute;
+    bottom: 1.5em;
+    left: 0em;
+    padding: 0 1em 0 1em;    
+    margin-left: 2em;
 }
 
 #my-name {
@@ -66,14 +80,13 @@ nav {
     max-height: 12.5vh;
 }
 
+#nav-right {
+    margin-right: 8em;
+}
+
 #nav-text a {
     color: var(--greenish);
     margin-right:1em;
-}
-
-/* container needed for the absolutely relative position to the image */
-#background-container {
-    position: relative;
 }
 
 #background-image {
@@ -87,5 +100,4 @@ nav {
     bottom: 1.5em;
     right: 5em;
     padding:.125em;
-
 }

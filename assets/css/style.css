@@ -23,23 +23,39 @@ nav {
     background-color: var(--blackish);
 }
 
-
-#myname {
+.badge {    
     color: var(--blackish);
     background-color: var(--greenish);
+}
+
+
+#my-name {
     margin: .25em .25em .25em 0em;
     padding: 0em .5em 0em 2em;
     font-size:x-large;
 
 }
 
-#navtext a {
+#nav-text a {
     color: var(--greenish);
     margin-right:1em;
+}
+
+/* container needed for the absolutely relative position to the image */
+#background-container {
+    position: relative;
 }
 
 #background-image {
     width: 100%;
     height: 400px;
     object-fit: cover;
+}
+
+#background-subtitle {
+    position: absolute;
+    bottom: 1.5em;
+    right: 5em;
+    padding:.125em;
+
 }

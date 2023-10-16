@@ -10,8 +10,8 @@
 
 p {
     display: flex;
-    flex-wrap:wrap;
-    max-width: 50%;
+    flex-wrap: wrap;
+    margin-right: 5em;
 }
 
 nav {
@@ -32,10 +32,11 @@ nav {
     color: var(--blackish);
 }
 
+
+/* note: don't use 'wrap' on sections that you want to keep in a row */
 .content-block {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     margin: 3em;
 }
 

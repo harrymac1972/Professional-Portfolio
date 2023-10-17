@@ -22,6 +22,8 @@ nav {
     background-color: var(--blackish);
 }
 
+ /* -------- classes --------  */
+
 .badge, .work-badge {
     background-color: var(--greenish);
 }
@@ -95,6 +97,8 @@ nav {
     padding: 0 1em 0 1em;
 }
 
+/* -------- IDs --------  */
+
 /* container needed for the absolutely relative position to the image */
 #background-container, .img-set {
     position: relative;
@@ -131,6 +135,8 @@ nav {
     right: 5em;
     padding: .125em;
 }
+
+/* -------- contact links (that are responsive to change in width) -------- */
 
 #contact-me {
     align-items: center;

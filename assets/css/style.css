@@ -143,6 +143,10 @@ nav {
     text-decoration-thickness: 3px;
 }
  
+#contact-info ul {
+    list-style-type: none;
+}
+
 @media screen and (min-width: 1638px) {
     #contact-info li {
         display: inline;

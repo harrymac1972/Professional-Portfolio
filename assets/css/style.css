@@ -143,8 +143,16 @@ nav {
     text-decoration-thickness: 3px;
 }
  
-#contact-info li {
-    display: inline;
-    margin: 3.5em;
+@media screen and (min-width: 1638px) {
+    #contact-info li {
+        display: inline;
+        margin: 3.5em;
+    }  
+} else {
+    #contact-info li {
+        display: block;
+        margin: 3.5em;
+    }
 }
+
 
